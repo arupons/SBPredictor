@@ -7,8 +7,8 @@ from RestrictionConfig import PYPH as HourRestrictions
 class Predictor:
 
     def predict(self, plate, date, time):
+        result = {}
         if Plate().validate(plate):
-            result = {}
             dateFormat = '%Y-%m-%d %H:%M'
             try:
                 formattedDate = datetime.strptime(
