@@ -49,6 +49,3 @@ class Predictor:
             result['msg'] = 'Incorrect data format, Plate must be valid, example: ABC-1234, ABC-123'
             result['success'] = False
         return result
-
-
-print(Predictor().predict('aaa-123', '2019-04-08', '08:00'))
